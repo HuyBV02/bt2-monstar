@@ -1,11 +1,1879 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Normalize css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- IonIcon -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- material icon -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+        />
+        <!-- Custom css -->
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+    <body>
+        <section id="app">
+            <section id="header-container">
+                <header class="header">
+                    <div class="phone-number primary-margin-left">
+                        <ion-icon name="headset"></ion-icon>
+                        <p>+1 916-85-2235</p>
+                    </div>
+
+                    <div class="socials">
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-twitter"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-facebook"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-instagram"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-linkedin"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-google"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-youtube"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-pinterest"
+                        ></ion-icon>
+                    </div>
+                    <div class="top-menu primary-margin-right">
+                        <div class="menu">
+                            <div class="menu-item">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                                <p>My Account</p>
+                            </div>
+                            <div class="menu-item">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                                <p>FAQ</p>
+                            </div>
+                            <div class="menu-item">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                                <p>Contact Us</p>
+                            </div>
+                            <div class="menu-item">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                                <p>Newsletter Signup</p>
+                            </div>
+                            <div class="menu-item">
+                                <ion-icon
+                                    name="chevron-forward-outline"
+                                ></ion-icon>
+                                <p>Shipping Terms</p>
+                            </div>
+                        </div>
+                        <button class="btn-top">My Wishlist</button>
+                    </div>
+                </header>
+
+                <nav class="navbar">
+                    <div class="logo primary-margin-left">
+                        <img src="/assets/images/logo-icon.png" alt="" />
+                        <p>THE GEM</p>
+                    </div>
+                    <ul class="nav">
+                        <li>HOME</li>
+                        <li>PAGES</li>
+                        <li>BLOG</li>
+                        <li>PORTFOLIOS</li>
+                        <li class="active">SHOP</li>
+                        <li>FEATURE</li>
+                        <li>ELEMENT</li>
+                    </ul>
+
+                    <div class="icon primary-margin-right">
+                        <img src="/assets/images/america-icon.png" alt="" />
+                        <ion-icon name="search-outline"></ion-icon>
+
+                        <div class="cart">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <!-- <img
+                                src="/assets/images/tag-cart.png"
+                                alt=""
+                                class="tag-cart"
+                            /> -->
+                            <div class="tag-icon">2</div>
+                        </div>
+                    </div>
+                </nav>
+
+                <section class="slider">
+                    <div class="slide active">
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/001/782/780/non_2x/light-purple-pink-gradient-blur-backdrop-vector.jpg"
+                            alt="Slide 1"
+                        />
+                        <div class="description">
+                            <h1>70% <span>OFF</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur elit.
+                                Possimus, rerum!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Possimus, rerum!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/001/782/780/non_2x/light-purple-pink-gradient-blur-backdrop-vector.jpg"
+                            alt="Slide 2"
+                        />
+                        <div class="description">
+                            <h1>60% <span>OFF</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur elit.
+                                Possimus, rerum!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Possimus, rerum!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="description">
+                            <h1>50% <span>OFF</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur elit.
+                                Possimus, rerum!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Possimus, rerum!
+                            </p>
+                        </div>
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/001/782/780/non_2x/light-purple-pink-gradient-blur-backdrop-vector.jpg"
+                            alt="Slide 3"
+                        />
+                    </div>
+                    <button class="prev" onclick="prevSlide()">
+                        <ion-icon name="arrow-back"></ion-icon>
+                    </button>
+                    <button class="next" onclick="nextSlide()">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                </section>
+            </section>
+
+            <section id="main-app">
+                <aside id="aside">
+                    <!-- <h2 class="aside-title">
+                        CATEGORIES
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                            fill="#BD4C31"
+                            class="red-tag"
+                        >
+                            <path d="M480-352 233-599h494L480-352Z" />
+                        </svg>
+                    </h2> -->
+                </aside>
+                <main id="content">
+                    <section class="product-1">
+                        <article class="item">
+                            <div class="title">
+                                <h2>SALES</h2>
+                                <div></div>
+                                <p>9 Items</p>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="title">
+                                <h2>DRESSES</h2>
+                                <div></div>
+                                <p>19 Items</p>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="title">
+                                <h2>LINGERIE</h2>
+                                <div></div>
+                                <p>5 Items</p>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="title">
+                                <h2>SHIRTS</h2>
+                                <div></div>
+                                <p>9 Items</p>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="title">
+                                <h2>ACCESSORIES</h2>
+                                <div></div>
+                                <p>9 Items</p>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="title">
+                                <h2>BAGS</h2>
+                                <div></div>
+                                <p>5 Items</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="arrow-pagination-1">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </section>
+
+                    <section class="sorting-bar">
+                        <div class="sorting">
+                            <select name="page" id="page">
+                                <option value="1">Default sorting</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <div>
+                                DESC
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider round"></span>
+                                </label>
+                                ASC
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <p>Showing 1-12 results</p>
+                            <select name="page" id="page">
+                                <option value="1">Show 12 on page</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="product-2">
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$ 39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$ 39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$ 39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$ 39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <div class="product-img"></div>
+                            <div class="product-info">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                                <h2>White Dress</h2>
+                                <p>$39 - $89</p>
+                                <div class="action">
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+            </section>
+
+            <section class="brands zig-zag">
+                <h2>OUR BRANDS</h2>
+                <div class="brands-slider">
+                    <div class="brand-item"></div>
+                    <div class="brand-item"></div>
+                    <div class="brand-item"></div>
+                    <div class="brand-item"></div>
+                    <div class="brand-item"></div>
+                    <div class="brand-item"></div>
+                </div>
+                <div class="dot">
+                    <div class="dot-item active">
+                        <div class="dot-hover"></div>
+                    </div>
+                    <div class="dot-item">
+                        <div class="dot-hover"></div>
+                    </div>
+
+                    <div class="dot-item">
+                        <div class="dot-hover"></div>
+                    </div>
+
+                    <div class="dot-item">
+                        <div class="dot-hover"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="last-news primary-margin-left primary-margin-right">
+                <h1>LAST NEWS</h1>
+                <div class="last-news-card">
+                    <div class="item">
+                        <div class="header"></div>
+                        <div class="content">
+                            <div class="content-header">
+                                <p>By <span>Admin</span></p>
+                                <div>
+                                    <ion-icon name="heart"></ion-icon
+                                    ><span>0</span>
+                                    <ion-icon
+                                        name="chatbubble"
+                                        class="liked"
+                                    ></ion-icon
+                                    ><span class="liked">1</span>
+                                </div>
+                            </div>
+                            <div class="content-title">
+                                5 MAY:
+                                <span
+                                    >SIMPLE <br />
+                                    BLOG POST</span
+                                >
+                            </div>
+                            <div class="content-desc">
+                                Lorem ipsum dolor sit,<br />
+                                amet consectetur adipisicing <br />elit.
+                                Eligendi excepturi quaerat .
+                            </div>
+                            <div class="content-footer">
+                                <ion-icon name="share-social-sharp"></ion-icon>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header"></div>
+                        <div class="content">
+                            <div class="content-header">
+                                <p>By <span>Admin</span></p>
+                                <div>
+                                    <ion-icon name="heart"></ion-icon
+                                    ><span>0</span>
+                                    <ion-icon
+                                        name="chatbubble"
+                                        class="liked"
+                                    ></ion-icon
+                                    ><span class="liked">0</span>
+                                </div>
+                            </div>
+                            <div class="content-title">
+                                5 MAY:
+                                <span
+                                    >SIMPLE <br />
+                                    BLOG POST</span
+                                >
+                            </div>
+                            <div class="content-desc">
+                                Lorem ipsum dolor sit,<br />
+                                amet consectetur adipisicing <br />elit.
+                                Eligendi excepturi quaerat .
+                            </div>
+                            <div class="content-footer">
+                                <ion-icon name="share-social-sharp"></ion-icon>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header"></div>
+                        <div class="content">
+                            <div class="content-header">
+                                <p>By <span>Admin</span></p>
+                                <div>
+                                    <ion-icon name="heart"></ion-icon
+                                    ><span>0</span>
+                                    <ion-icon
+                                        name="chatbubble"
+                                        class="liked"
+                                    ></ion-icon
+                                    ><span class="liked">0</span>
+                                </div>
+                            </div>
+                            <div class="content-title">
+                                5 MAY:
+                                <span
+                                    >SIMPLE <br />
+                                    BLOG POST</span
+                                >
+                            </div>
+                            <div class="content-desc">
+                                Lorem ipsum dolor sit,<br />
+                                amet consectetur adipisicing <br />elit.
+                                Eligendi excepturi quaerat .
+                            </div>
+                            <div class="content-footer">
+                                <ion-icon name="share-social-sharp"></ion-icon>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header"></div>
+                        <div class="content">
+                            <div class="content-header">
+                                <p>By <span>Admin</span></p>
+                                <div>
+                                    <ion-icon name="heart"></ion-icon
+                                    ><span>0</span>
+                                    <ion-icon
+                                        name="chatbubble"
+                                        class="liked"
+                                    ></ion-icon
+                                    ><span class="liked">0</span>
+                                </div>
+                            </div>
+                            <div class="content-title">
+                                5 MAY:
+                                <span
+                                    >SIMPLE <br />
+                                    BLOG POST</span
+                                >
+                            </div>
+                            <div class="content-desc">
+                                Lorem ipsum dolor sit,<br />
+                                amet consectetur adipisicing <br />elit.
+                                Eligendi excepturi quaerat .
+                            </div>
+                            <div class="content-footer">
+                                <ion-icon name="share-social-sharp"></ion-icon>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div
+                class="line-div primary-margin-left primary-margin-right"
+            ></div>
+            <div
+                class="line-div primary-margin-left primary-margin-right"
+            ></div>
+
+            <section class="tag-info primary-margin-left primary-margin-right">
+                <div class="item accept">
+                    <header class="title">
+                        <h1>WE ACCEPT</h1>
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="40px"
+                            viewBox="0 -960 960 960"
+                            width="40px"
+                            fill="#3c3950"
+                        >
+                            <path
+                                d="M908.67-723.33v486.66q0 43.7-30.68 74.19Q847.31-132 803.33-132H156.67q-43.7 0-74.19-30.48Q52-192.97 52-236.67v-486.66q0-43.98 30.48-74.66 30.49-30.68 74.19-30.68h646.66q43.98 0 74.66 30.68t30.68 74.66Zm-752 87h646.66v-87H156.67v87Zm0 139.33v260.33h646.66V-497H156.67Zm0 260.33v-486.66 486.66Z"
+                            />
+                        </svg>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. <br />
+                        Praesentium explicabo ipsum quidem nihil tempore.
+                    </p>
+                    <div class="box">
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                        <div class="box-item"></div>
+                    </div>
+                </div>
+                <div class="item methods">
+                    <header class="title">
+                        <h1>SHIPPING METHODS</h1>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="40px"
+                            viewBox="0 -960 960 960"
+                            width="40px"
+                            fill="#3c3950"
+                        >
+                            <path
+                                d="M432-183.67v-269.08L196.67-589v269.08L432-183.67Zm96.67 0 234.66-136.25v-269.75L528.67-452.75v269.08Zm-101 118L144.33-228.33q-25-14.34-38.66-38.81Q92-291.61 92-319.33v-321.34q0-27.72 13.67-52.19 13.66-24.47 38.66-38.81L427.67-895Q452-908.67 480-908.67T532.33-895l283.34 163.33q25 14.34 39 38.81 14 24.47 14 52.19v321.34q0 27.72-14 52.19t-39 38.81L532.33-65.67Q508-51.33 480-51.33t-52.33-14.34Zm212.66-563 71.34-41.66L480-804l-70.67 41 231 134.33Zm-160.33 93L553-578 320.33-711l-72 40.67L480-535.67Z"
+                            />
+                        </svg>
+                    </header>
+                    <div class="content">
+                        <div class="line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M228-110q-48.68 0-83.34-34.66Q110-179.32 110-228v-504q0-48.67 34.66-83.34Q179.32-850 228-850h504.25q9.54 0 23.65 3 14.1 3 24.1 7L672-732H228v504h504v-209l118-118v327q0 48.68-34.66 83.34Q780.67-110 732-110H228Zm261-186L273-513l61-61 155 155 346-345 61 62-407 406Z"
+                                />
+                            </svg>
+                            &nbsp;
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                        <div class="line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M228-110q-48.68 0-83.34-34.66Q110-179.32 110-228v-504q0-48.67 34.66-83.34Q179.32-850 228-850h504.25q9.54 0 23.65 3 14.1 3 24.1 7L672-732H228v504h504v-209l118-118v327q0 48.68-34.66 83.34Q780.67-110 732-110H228Zm261-186L273-513l61-61 155 155 346-345 61 62-407 406Z"
+                                />
+                            </svg>
+
+                            <span> &nbsp;Lorem ipsum dolor sit amet.</span>
+                        </div>
+                        <div class="line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M228-110q-48.68 0-83.34-34.66Q110-179.32 110-228v-504q0-48.67 34.66-83.34Q179.32-850 228-850h504.25q9.54 0 23.65 3 14.1 3 24.1 7L672-732H228v504h504v-209l118-118v327q0 48.68-34.66 83.34Q780.67-110 732-110H228Zm261-186L273-513l61-61 155 155 346-345 61 62-407 406Z"
+                                />
+                            </svg>
+
+                            <span>
+                                &nbsp;Lorem ipsum dolor sit amet
+                                consectetur.</span
+                            >
+                        </div>
+                        <div class="line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M228-110q-48.68 0-83.34-34.66Q110-179.32 110-228v-504q0-48.67 34.66-83.34Q179.32-850 228-850h504.25q9.54 0 23.65 3 14.1 3 24.1 7L672-732H228v504h504v-209l118-118v327q0 48.68-34.66 83.34Q780.67-110 732-110H228Zm261-186L273-513l61-61 155 155 346-345 61 62-407 406Z"
+                                />
+                            </svg>
+
+                            <span> &nbsp;Lorem ipsum dolor sit amet.</span>
+                        </div>
+                        <div class="line">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M228-110q-48.68 0-83.34-34.66Q110-179.32 110-228v-504q0-48.67 34.66-83.34Q179.32-850 228-850h504.25q9.54 0 23.65 3 14.1 3 24.1 7L672-732H228v504h504v-209l118-118v327q0 48.68-34.66 83.34Q780.67-110 732-110H228Zm261-186L273-513l61-61 155 155 346-345 61 62-407 406Z"
+                                />
+                            </svg>
+
+                            <span> &nbsp;Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-top-sale">
+                <div class="item new">
+                    <header class="title">
+                        NEW PRODUCTS
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                            fill="#BD4C31"
+                            class="red-tag"
+                        >
+                            <path d="M480-352 233-599h494L480-352Z" />
+                        </svg>
+                    </header>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item top">
+                    <header class="title">
+                        TOP RATED PRODUCTS
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                            fill="#BD4C31"
+                            class="red-tag"
+                        >
+                            <path d="M480-352 233-599h494L480-352Z" />
+                        </svg>
+                    </header>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sale">
+                    <header class="title">
+                        ON SALES
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                            fill="#BD4C31"
+                            class="red-tag"
+                        >
+                            <path d="M480-352 233-599h494L480-352Z" />
+                        </svg>
+                    </header>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <div class="percent">%</div>
+                        </div>
+                        <div class="content">
+                            <h4>Product title here</h4>
+                            <div class="cost-star">
+                                <span>$200-$400</span>
+                                <div class="star">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#ffc107"
+                                    >
+                                        <path
+                                            d="m379-339 101-77 101 77-38.5-122 114-91H520l-40-124-39 124H303.5l114 91L379-339ZM254-160l86-277-226-182h277l89-273 89 273h277L620-437l86 277-226-171-226 171Zm226-348Z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promotion">
+                <div class="title">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="80px"
+                        viewBox="0 -960 960 960"
+                        width="80px"
+                        fill="#3c3950"
+                    >
+                        <path
+                            d="M480-104 69-599l125-251h572l127 251-413 495ZM365-629h231l-72-142h-88l-71 142Zm87 366v-309H195l257 309Zm57 0 256-309H509v309Zm151-366h125l-71-142H589l71 142Zm-484 0h125l71-142H246l-70 142Z"
+                        />
+                    </svg>
+                    <div>
+                        SELL MORE <br />
+                        <span>WITH THE GEM SHOP</span>
+                    </div>
+                </div>
+                <button class="purchase-now">PURCHASE NOW!</button>
+            </section>
+
+            <footer id="footer-container">
+                <div class="information">
+                    <div class="item b-contact">
+                        <div class="logo-bottom">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="100px"
+                                viewBox="0 -960 960 960"
+                                width="100px"
+                                fill="#00bcd4"
+                            >
+                                <path
+                                    d="M480-104 69-599l125-251h572l127 251-413 495ZM365-629h231l-72-142h-88l-71 142Zm87 366v-309H195l257 309Zm57 0 256-309H509v309Zm151-366h125l-71-142H589l71 142Zm-484 0h125l71-142H246l-70 142Z"
+                                />
+                            </svg>
+                            <h1>THE <span>GEM</span></h1>
+                        </div>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Impedit pariatur, natus dolor saepe minima,
+                            totam ipsam excepturi in labore voluptates est
+                            doloremque distinctio repellat a veniam.
+                        </p>
+                        <h2 class="footer-title">
+                            CONTACT
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+
+                        <p class="address">
+                            <ion-icon name="location-outline"></ion-icon
+                            >&nbsp;Address: 123 Main St, Anytown, USA
+                        </p>
+                        <div class="line"></div>
+                        <div class="contact-info">
+                            <p>
+                                <ion-icon name="headset-outline"></ion-icon>
+                                &nbsp;Phone: +1 800 123 4567
+                            </p>
+                            <p>
+                                <ion-icon
+                                    name="file-tray-full-outline"
+                                ></ion-icon>
+                                &nbsp;Fax: +1 800 123 4567
+                            </p>
+                            <p>
+                                <ion-icon name="mail-outline"></ion-icon>
+                                &nbsp;Email:
+                                <a href="#" class="email"> info@example.com </a>
+                            </p>
+                            <p>
+                                <ion-icon name="globe-outline"></ion-icon>
+                                &nbsp;Website:
+                                <a href="#" class="web"> www.example.com </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item post-link">
+                        <h2 class="footer-title">
+                            RECENT POSTS<svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+                        <div class="post">
+                            <div class="post-img"></div>
+                            <div class="post-content">
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <p>27 Dec 2015</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-img"></div>
+                            <div class="post-content">
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <p>27 Dec 2015</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-img"></div>
+                            <div class="post-content">
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <p>27 Dec 2015</p>
+                            </div>
+                        </div>
+
+                        <h2 class="footer-title">
+                            USEFUL LINKS
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+                        <ul class="list-links">
+                            <li>
+                                <a href="#"
+                                    ><div class="tag-line"></div>
+                                    Lorem ipsum dolor sit amet.</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div class="tag-line"></div>
+                                    Lorem ipsum dolor sit amet.</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div class="tag-line"></div>
+                                    Lorem ipsum dolor sit amet.</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div class="tag-line"></div>
+                                    Lorem ipsum dolor sit amet.</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><div class="tag-line"></div>
+                                    Lorem ipsum dolor sit amet.</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item email-project">
+                        <h2 class="footer-title">
+                            EMAIL US
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+                        <div class="send-mail">
+                            <input
+                                type="text"
+                                class="username"
+                                placeholder="Your name"
+                            />
+                            <input
+                                type="email"
+                                class="email"
+                                placeholder="your@email.address"
+                            />
+                            <textarea
+                                name="desc"
+                                id="desc"
+                                placeholder="Your message"
+                            ></textarea>
+                            <button>SEND MAIL</button>
+                        </div>
+                        <h2 class="footer-title">
+                            PROJECTS / CLIENTS<svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+
+                        <div class="feed">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="project-dot">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="item feed-newsletter">
+                        <h2 class="footer-title">
+                            FLICKER FEED<svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+                        <div class="feed">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <h2 class="footer-title">
+                            NEWSLETTER<svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+                        <p class="desc-news">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure repellendus vitae assumenda?
+                        </p>
+
+                        <form class="mail-news">
+                            <input
+                                type="email"
+                                class="email-news"
+                                placeholder="Your email address"
+                            />
+                            <ion-icon name="chevron-forward-outline">
+                            </ion-icon>
+                        </form>
+                        <p class="terms">
+                            *
+                            <span>Personal information will be encrypted</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <p>&copy; Copyright 2015 <span>CodexThemes</span></p>
+                    <div class="nav-bottom">
+                        <h4>Support</h4>
+                        <div class="bar"></div>
+                        <h4>Contact Us</h4>
+                        <div class="bar"></div>
+                        <h4>Disclaimer</h4>
+                        <div class="bar"></div>
+                        <h4>Privacy Policy</h4>
+                    </div>
+
+                    <div class="socials">
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-twitter"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-facebook"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-instagram"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-linkedin"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-google"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-youtube"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-pinterest"
+                        ></ion-icon>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Custom JS -->
+        <script src="/assets/js/index.js"></script>
+    </body>
 </html>
