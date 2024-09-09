@@ -53,7 +53,7 @@
     <body>
         <section id="app">
             <section id="header-container">
-                <header class="header">
+                <header class="header pc-view">
                     <div class="phone-number primary-margin-left">
                         <ion-icon name="headset"></ion-icon>
                         <p>+1 916-85-2235</p>
@@ -126,7 +126,59 @@
                     </div>
                 </header>
 
-                <nav class="navbar">
+                <header class="header mobile-view">
+                    <div class="phone-number">
+                        <ion-icon name="headset"></ion-icon>
+                        <p>+1 916-85-2235</p>
+                    </div>
+
+                    <div class="top-menu">
+                        <button class="btn-top">My Wishlist</button>
+                    </div>
+                </header>
+
+                <header class="header tablet-view">
+                    <div class="phone-number">
+                        <ion-icon name="headset"></ion-icon>
+                        <p>+1 916-85-2235</p>
+                    </div>
+
+                    <div class="socials">
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-twitter"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-facebook"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-instagram"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-linkedin"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-google"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-youtube"
+                        ></ion-icon>
+                        <ion-icon
+                            class="social-icon"
+                            name="logo-pinterest"
+                        ></ion-icon>
+                    </div>
+                    <div class="top-menu">
+                        <button class="btn-top">My Wishlist</button>
+                    </div>
+                </header>
+
+                <nav class="navbar pc-view">
                     <div class="logo primary-margin-left">
                         <img src="/assets/images/logo-icon.png" alt="" />
                         <p>THE GEM</p>
@@ -155,6 +207,102 @@
                             <div class="tag-icon">2</div>
                         </div>
                     </div>
+                </nav>
+
+                <nav class="navbar mobile-view tablet-view">
+                    <div class="logo">
+                        <img src="/assets/images/logo-icon.png" alt="" />
+                        <p>THE GEM</p>
+                    </div>
+
+                    <div class="icon">
+                        <img src="/assets/images/america-icon.png" alt="" />
+                        <ion-icon name="search-outline"></ion-icon>
+
+                        <div class="cart">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <!-- <img
+                                src="/assets/images/tag-cart.png"
+                                alt=""
+                                class="tag-cart"
+                            /> -->
+                            <div class="tag-icon">2</div>
+                        </div>
+                        <label for="nav-mobile-input">
+                            <ion-icon name="reorder-four-outline"></ion-icon>
+                        </label>
+                    </div>
+                </nav>
+
+                <input
+                    type="checkbox"
+                    name=""
+                    class="nav__input"
+                    id="nav-mobile-input"
+                />
+
+                <label for="nav-mobile-input" class="overlay-nav"></label>
+
+                <nav class="mobile-nav">
+                    <label for="nav-mobile-input" class="close-nav-mobile">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </label>
+                    <div class="user-view">
+                        <div class="img"></div>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <ion-icon name="home-outline"></ion-icon>
+                            <span>HOME</span>
+                        </li>
+                        <li>
+                            <ion-icon name="copy-outline"></ion-icon>
+                            <span>PAGES</span>
+                        </li>
+                        <li>
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                            <span> BLOG </span>
+                        </li>
+                        <li>
+                            <ion-icon name="person-outline"></ion-icon>
+                            <span> PORTFOLIOS </span>
+                        </li>
+                        <li class="active">
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <span> SHOP </span>
+                        </li>
+                        <li>
+                            <ion-icon name="funnel-outline"></ion-icon>
+                            <span> FEATURE </span>
+                        </li>
+                        <li>
+                            <ion-icon name="filter-outline"></ion-icon>
+                            <span> ELEMENT </span>
+                        </li>
+                    </ul>
+
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <p>My Account</p>
+                        </li>
+                        <li class="menu-item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <p>FAQ</p>
+                        </li>
+                        <li class="menu-item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <p>Contact Us</p>
+                        </li>
+                        <li class="menu-item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <p>Newsletter Signup</p>
+                        </li>
+                        <li class="menu-item">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <p>Shipping Terms</p>
+                        </li>
+                    </ul>
                 </nav>
 
                 <section class="slider">
@@ -219,7 +367,7 @@
             </section>
 
             <section id="main-app">
-                <aside id="aside">
+                <aside id="aside" class="pc-view">
                     <h2 class="aside-title">
                         <span>CATEGORIES</span>
                         <svg
@@ -673,8 +821,14 @@
                         <div class="content">
                             <h2>$ 5</h2>
                             <h3>COUPON <span>FOR FREE</span></h3>
-                            <p>Just Signup For <br>Our Newsletter <br> And Get $5 To <br>Your Account</p>
-                            <input type="text" placeholder="Enter your email...">
+                            <p>
+                                Just Signup For <br />Our Newsletter <br />
+                                And Get $5 To <br />Your Account
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="Enter your email..."
+                            />
                             <button>SIGN UP ME!</button>
                         </div>
                     </div>
@@ -724,9 +878,301 @@
                             <div class="checkout">CHECKOUT</div>
                         </div>
                     </div>
-
                 </aside>
                 <main id="content">
+                    <section
+                        class="content-header-mobile mobile-view tablet-view"
+                    >
+                        <div class="btn-filter-search">
+
+                            <label for="filter-checked">
+                                <ion-icon name="funnel-outline"></ion-icon>
+                            </label>
+                            <div class="search-input">
+                                <input
+                                    type="text"
+                                    placeholder="Search for products..."
+                                />
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="" id="filter-checked" class="filter-checked">
+
+                        <div class="dropdown-aside-mobile">
+                            <div class="nav">
+                                <div class="nav-link-product">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>VERSION</span>
+                                            <button class="toggle-btn">
+                                                <ion-icon
+                                                    name="chevron-forward-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                        <ul class="accordion-content">
+                                            <li>July 2015</li>
+                                            <li>January 2013</li>
+                                            <li>March 2012</li>
+                                            <li class="sub-list">
+                                                January 2012
+                                                <ul class="sub-content">
+                                                    <li>July 2015</li>
+                                                    <li>January 2013</li>
+                                                    <li class="highlighted">March 2012</li>
+                                                    <li>January 2012</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>LOREM IPSUM</span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>PROIN</span>
+                                            <button class="toggle-btn">
+                                                <ion-icon
+                                                    name="chevron-forward-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                        <ul class="accordion-content">
+                                            <li>July 2015</li>
+                                            <li>January 2013</li>
+                                            <li>March 2012</li>
+                                            <li class="sub-list">
+                                                January 2012
+                                                <ul class="sub-content">
+                                                    <li>July 2015</li>
+                                                    <li>January 2013</li>
+                                                    <li class="highlighted">March 2012</li>
+                                                    <li>January 2012</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>GRAVIDA</span>
+                                            <button class="toggle-btn">
+                                                <ion-icon
+                                                    name="chevron-forward-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                        <ul class="accordion-content">
+                                            <li>July 2015</li>
+                                            <li>January 2013</li>
+                                            <li>March 2012</li>
+                                            <li class="sub-list">
+                                                January 2012
+                                                <ul class="sub-content">
+                                                    <li>July 2015</li>
+                                                    <li>January 2013</li>
+                                                    <li class="highlighted">March 2012</li>
+                                                    <li>January 2012</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>NIBH VE VELIT</span>
+                                            <button class="toggle-btn">
+                                                <ion-icon
+                                                    name="chevron-forward-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                        <ul class="accordion-content">
+                                            <li>July 2015</li>
+                                            <li>January 2013</li>
+                                            <li>March 2012</li>
+                                            <li class="sub-list">
+                                                January 2012
+                                                <ul class="sub-content">
+                                                    <li>July 2015</li>
+                                                    <li>January 2013</li>
+                                                    <li class="highlighted">March 2012</li>
+                                                    <li>January 2012</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>AUCTOR</span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>ALIQUET</span>
+                                            <button class="toggle-btn">
+                                                <ion-icon
+                                                    name="chevron-forward-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                        <ul class="accordion-content">
+                                            <li>July 2015</li>
+                                            <li>January 2013</li>
+                                            <li>March 2012</li>
+                                            <li class="sub-list">
+                                                <span>January 2012</span>
+                                                <button class="toggle-btn1">
+                                                    <ion-icon
+                                                        name="chevron-forward-outline"
+                                                    ></ion-icon>
+                                                </button>
+            
+                                                <ul class="sub-content">
+                                                    <li class="cl1">July 2015</li>
+                                                    <li class="cl2">January 2013</li>
+                                                    <li class="cl3">March 2012</li>
+                                                    <li class="cl1">January 2012</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <span>AENEAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter">
+                                <h2 class="aside-title">
+                                    FILTER BY PRICE
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="20px"
+                                        viewBox="0 -960 960 960"
+                                        width="20px"
+                                        fill="#BD4C31"
+                                        class="red-tag"
+                                    >
+                                        <path
+                                            d="M480-352 233-599h494L480-352Z"
+                                        />
+                                    </svg>
+                                </h2>
+
+                                <div class="range-slider">
+                                    <input
+                                        type="range"
+                                        id="rangeMin"
+                                        min="0"
+                                        max="5000"
+                                        value="20"
+                                    />
+                                    <input
+                                        type="range"
+                                        id="rangeMax"
+                                        min="0"
+                                        max="5000"
+                                        value="80"
+                                    />
+                                    <div class="slider-track">
+                                        <div class="slider-fill"></div>
+                                    </div>
+                                    <div class="slider-values">
+                                        <span class="filter-value">FILTER</span>
+                                        <span>
+                                            <span
+                                                >Price: $<span id="minValue"
+                                                    >20</span
+                                                ></span
+                                            >
+                                            -<span
+                                                >$<span id="maxValue"
+                                                    >80</span
+                                                ></span
+                                            >
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="filter-by">
+                                    <div class="item">
+                                        <h2 class="aside-title">
+                                            FILTER BY COLOR
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="20px"
+                                                viewBox="0 -960 960 960"
+                                                width="20px"
+                                                fill="#BD4C31"
+                                                class="red-tag"
+                                            >
+                                                <path
+                                                    d="M480-352 233-599h494L480-352Z"
+                                                />
+                                            </svg>
+                                        </h2>
+
+                                        <select
+                                            name="color-filter"
+                                            id="color-filter"
+                                            class="a-filter"
+                                        >
+                                            <option value="default">
+                                                Any color
+                                            </option>
+                                            <option value="red">RED</option>
+                                            <option value="red">RED</option>
+                                            <option value="red">RED</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="item">
+                                        <h2 class="aside-title">
+                                            FILTER BY SIZE
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="20px"
+                                                viewBox="0 -960 960 960"
+                                                width="20px"
+                                                fill="#BD4C31"
+                                                class="red-tag"
+                                            >
+                                                <path
+                                                    d="M480-352 233-599h494L480-352Z"
+                                                />
+                                            </svg>
+                                        </h2>
+
+                                        <select
+                                            name="size-filter"
+                                            id="size-filter"
+                                            class="a-filter"
+                                        >
+                                            <option value="default">
+                                                Any size
+                                            </option>
+                                            <option value="red">S</option>
+                                            <option value="red">M</option>
+                                            <option value="red">L</option>
+                                            <option value="red">XL</option>
+                                            <option value="red">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <section class="product-1">
                         <article class="item">
                             <div class="title">
@@ -1164,6 +1610,207 @@
                         <div>4</div>
                         <div>5</div>
                         <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </section>
+
+                    <section class="tag-moblie-view mobile-view tablet-view">
+                        <h2 class="aside-title">
+                            RECENTLY VIEWED
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+
+                        <div class="recently-view-prod">
+                            <div class="item">
+                                <div class="img">
+                                    <!-- <div class="percent"></div> -->
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+                                    <div class="star-rate">
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                    <p class="price">$35.00</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img">
+                                    <div class="percent">%</div>
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+                                    <div class="star-rate">
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                    </div>
+                                    <p class="price">$35.00 - $89.99</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img">
+                                    <!-- <div class="percent"></div> -->
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+                                    <!-- <div class="star-rate">
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon
+                                            name="star"
+                                            class="checked"
+                                        ></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div> -->
+                                    <p class="price">$35.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="aside-title">
+                            PRODUCT TAGS
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+
+                        <p class="prod-tag">
+                            <span>Lorem</span> <span>ipsum</span>
+                            <span>dolor</span> <span>sit</span>
+                            <span>amet</span> <span>consectetur</span>
+                            <span>adipisicing</span> <span>elit</span>
+                            <span>Provident</span> <span>dolore</span>
+                            <span>mollitia</span> <span>maxime</span>
+                            <span>placeat</span> <span>laborum</span>
+                            <span>Laudantium</span> <span>quisquam</span>
+                            <span>veritatis</span> <span>inventore</span>
+                            <span>corrupti</span>
+                            <span>tenetur</span>
+                        </p>
+
+                        <h2 class="aside-title">
+                            FEATURE PRODUCTS
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="20px"
+                                viewBox="0 -960 960 960"
+                                width="20px"
+                                fill="#BD4C31"
+                                class="red-tag"
+                            >
+                                <path d="M480-352 233-599h494L480-352Z" />
+                            </svg>
+                        </h2>
+
+                        <div class="feature-prod">
+                            <div class="item">
+                                <div class="img">
+                                    <!-- <div class="percent"></div> -->
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+
+                                    <p class="price">$35.00</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img">
+                                    <div class="percent">%</div>
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+                                    <p class="price">$35.00 - $89.99</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img">
+                                    <div class="percent">%</div>
+                                </div>
+                                <div class="content">
+                                    <p class="title">Product Title Here</p>
+
+                                    <p class="price">$35.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner-aside">
+                            <div class="border-in"></div>
+                            <div class="content">
+                                <h2>$ 5</h2>
+                                <h3>COUPON <span>FOR FREE</span></h3>
+                                <p>
+                                    Just Signup For <br />Our Newsletter <br />
+                                    And Get $5 To <br />Your Account
+                                </p>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your email..."
+                                />
+                                <button>SIGN UP ME!</button>
+                            </div>
+                        </div>
                     </section>
                 </main>
             </section>
@@ -2192,7 +2839,7 @@
 
                         <p class="address">
                             <ion-icon name="location-outline"></ion-icon
-                            >&nbsp;Address: 123 Main St, Anytown, USA
+                            >&nbsp;Address: Golden palace, Tầng hầm B1, Tòa nhà, Đ. Mễ Trì, Mễ Trì, Từ Liêm, Hà Nội, Việt Nam
                         </p>
                         <div class="line"></div>
                         <div class="contact-info">
