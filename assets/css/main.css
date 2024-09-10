@@ -400,12 +400,27 @@ body {
     margin-top: 100px !important;
 }
 
-.tag-moblie-view .recently-view-prod,
+/* .tag-moblie-view .recently-view-prod, */
 .tag-moblie-view .feature-prod {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: auto;
     row-gap: 20px;
+}
+
+.tag-moblie-view .recently-view-prod {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    background: none;
+}
+
+.tag-moblie-view .recently-view-prod .item {
+    gap: 20px;
+    width: 100%;
+    background-color: #f0f3f2;
 }
 
 .aside-title {
