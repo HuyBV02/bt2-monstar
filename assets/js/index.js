@@ -1,3 +1,5 @@
+// range filter price
+
 const rangeMin = document.getElementById("rangeMin");
 const rangeMax = document.getElementById("rangeMax");
 const minValue = document.getElementById("minValue");
@@ -33,6 +35,7 @@ rangeMax.addEventListener("input", updateSlider);
 
 window.onload = updateSlider;
 
+// slide show
 let slideIndex = 0;
 showSlides(slideIndex);
 
@@ -58,6 +61,8 @@ function prevSlide() {
     showSlides((slideIndex -= 1));
 }
 
+// accordion
+
 document.querySelectorAll(".accordion-header").forEach((header) => {
     header.addEventListener("click", function () {
         const item = this.parentElement;
@@ -70,5 +75,3 @@ document.querySelectorAll(".sub-list").forEach((subList) => {
         this.classList.toggle("active");
     });
 });
-
-

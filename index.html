@@ -49,6 +49,7 @@
         />
         <!-- Custom css -->
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <!-- <link rel="stylesheet" href="/assets/scss/index.css" /> -->
     </head>
     <body>
         <section id="app">
@@ -196,15 +197,22 @@
                     <div class="icon primary-margin-right">
                         <img src="/assets/images/america-icon.png" alt="" />
                         <ion-icon name="search-outline"></ion-icon>
-
                         <div class="cart">
-                            <ion-icon name="cart-outline"></ion-icon>
-                            <!-- <img
-                                src="/assets/images/tag-cart.png"
-                                alt=""
-                                class="tag-cart"
-                            /> -->
-                            <div class="tag-icon">2</div>
+                            <div class="tag-label-cart">
+                                <ion-icon name="cart-outline"> </ion-icon>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="30px"
+                                    viewBox="0 -960 960 960"
+                                    width="30px"
+                                    fill="#00bcd4"
+                                >
+                                    <path
+                                        d="m793-406.5-238 239q-8.06 8-16.77 11.25-8.7 3.25-18.98 3.25-9.75 0-18.5-3.25T484.5-167.5L168.2-483.3q-8.7-7.2-11.95-16.38Q153-508.87 153-519v-237.5q0-20.83 14.42-35.67Q181.83-807 203.5-807h238q9.33 0 18.07 2.9 8.75 2.89 16.66 10.8L793-478q7.91 8.21 11.71 16.69 3.79 8.48 3.79 18.18 0 10.37-3.83 19.69-3.82 9.31-11.67 16.94ZM268.34-659q13.91 0 23.54-9.45 9.62-9.46 9.62-22.96 0-13.92-9.48-23.76Q282.54-725 269-725q-14.33 0-23.92 9.62-9.58 9.63-9.58 23.38 0 13.75 9.46 23.37 9.47 9.63 23.38 9.63Z"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="tag-icon">2</span>
                         </div>
                     </div>
                 </nav>
@@ -215,18 +223,28 @@
                         <p>THE GEM</p>
                     </div>
 
-                    <div class="icon">
-                        <img src="/assets/images/america-icon.png" alt="" />
-                        <ion-icon name="search-outline"></ion-icon>
+                    <div>
+                        <div class="icon">
+                            <img src="/assets/images/america-icon.png" alt="" />
+                            <ion-icon name="search-outline"></ion-icon>
 
-                        <div class="cart">
-                            <ion-icon name="cart-outline"></ion-icon>
-                            <!-- <img
-                                src="/assets/images/tag-cart.png"
-                                alt=""
-                                class="tag-cart"
-                            /> -->
-                            <div class="tag-icon">2</div>
+                            <div class="cart">
+                                <div class="tag-label-cart">
+                                    <ion-icon name="cart-outline"> </ion-icon>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="30px"
+                                        viewBox="0 -960 960 960"
+                                        width="30px"
+                                        fill="#00bcd4"
+                                    >
+                                        <path
+                                            d="m793-406.5-238 239q-8.06 8-16.77 11.25-8.7 3.25-18.98 3.25-9.75 0-18.5-3.25T484.5-167.5L168.2-483.3q-8.7-7.2-11.95-16.38Q153-508.87 153-519v-237.5q0-20.83 14.42-35.67Q181.83-807 203.5-807h238q9.33 0 18.07 2.9 8.75 2.89 16.66 10.8L793-478q7.91 8.21 11.71 16.69 3.79 8.48 3.79 18.18 0 10.37-3.83 19.69-3.82 9.31-11.67 16.94ZM268.34-659q13.91 0 23.54-9.45 9.62-9.46 9.62-22.96 0-13.92-9.48-23.76Q282.54-725 269-725q-14.33 0-23.92 9.62-9.58 9.63-9.58 23.38 0 13.75 9.46 23.37 9.47 9.63 23.38 9.63Z"
+                                        />
+                                    </svg>
+                                </div>
+                                <span class="tag-icon">2</span>
+                            </div>
                         </div>
                         <label for="nav-mobile-input">
                             <ion-icon name="reorder-four-outline"></ion-icon>
@@ -884,7 +902,6 @@
                         class="content-header-mobile mobile-view tablet-view"
                     >
                         <div class="btn-filter-search">
-
                             <label for="filter-checked">
                                 <ion-icon name="funnel-outline"></ion-icon>
                             </label>
@@ -897,7 +914,12 @@
                             </div>
                         </div>
 
-                        <input type="checkbox" name="" id="filter-checked" class="filter-checked">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="filter-checked"
+                            class="filter-checked"
+                        />
 
                         <div class="dropdown-aside-mobile">
                             <div class="nav">
@@ -920,19 +942,21 @@
                                                 <ul class="sub-content">
                                                     <li>July 2015</li>
                                                     <li>January 2013</li>
-                                                    <li class="highlighted">March 2012</li>
+                                                    <li class="highlighted">
+                                                        March 2012
+                                                    </li>
                                                     <li>January 2012</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>LOREM IPSUM</span>
                                         </div>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>PROIN</span>
@@ -951,13 +975,15 @@
                                                 <ul class="sub-content">
                                                     <li>July 2015</li>
                                                     <li>January 2013</li>
-                                                    <li class="highlighted">March 2012</li>
+                                                    <li class="highlighted">
+                                                        March 2012
+                                                    </li>
                                                     <li>January 2012</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>GRAVIDA</span>
@@ -976,13 +1002,15 @@
                                                 <ul class="sub-content">
                                                     <li>July 2015</li>
                                                     <li>January 2013</li>
-                                                    <li class="highlighted">March 2012</li>
+                                                    <li class="highlighted">
+                                                        March 2012
+                                                    </li>
                                                     <li>January 2012</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>NIBH VE VELIT</span>
@@ -1001,19 +1029,21 @@
                                                 <ul class="sub-content">
                                                     <li>July 2015</li>
                                                     <li>January 2013</li>
-                                                    <li class="highlighted">March 2012</li>
+                                                    <li class="highlighted">
+                                                        March 2012
+                                                    </li>
                                                     <li>January 2012</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>AUCTOR</span>
                                         </div>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>ALIQUET</span>
@@ -1034,17 +1064,25 @@
                                                         name="chevron-forward-outline"
                                                     ></ion-icon>
                                                 </button>
-            
+
                                                 <ul class="sub-content">
-                                                    <li class="cl1">July 2015</li>
-                                                    <li class="cl2">January 2013</li>
-                                                    <li class="cl3">March 2012</li>
-                                                    <li class="cl1">January 2012</li>
+                                                    <li class="cl1">
+                                                        July 2015
+                                                    </li>
+                                                    <li class="cl2">
+                                                        January 2013
+                                                    </li>
+                                                    <li class="cl3">
+                                                        March 2012
+                                                    </li>
+                                                    <li class="cl1">
+                                                        January 2012
+                                                    </li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-            
+
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <span>AENEAN</span>
@@ -2839,7 +2877,8 @@
 
                         <p class="address">
                             <ion-icon name="location-outline"></ion-icon
-                            >&nbsp;Address: Golden palace, Tầng hầm B1, Tòa nhà, Đ. Mễ Trì, Mễ Trì, Từ Liêm, Hà Nội, Việt Nam
+                            >&nbsp;Address: Golden palace, Tầng hầm B1, Tòa nhà,
+                            Đ. Mễ Trì, Mễ Trì, Từ Liêm, Hà Nội, Việt Nam
                         </p>
                         <div class="line"></div>
                         <div class="contact-info">
