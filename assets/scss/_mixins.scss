@@ -1,0 +1,47 @@
+@mixin d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin d-flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@mixin d-grid-20 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+@mixin d-grid-30 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+// @mixin d-grid-30 {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+//     grid-template-rows: auto;
+//     row-gap: 10px;
+//     column-gap: 10px;
+// }
