@@ -206,6 +206,7 @@
             grid-template-columns: 30% 30% 30%;
             row-gap: 17px;
             column-gap: 10px;
+            place-items: center;
             grid-template-rows: auto;
             div {
                 width: 80px;
@@ -267,6 +268,58 @@
             span {
                 color: #99a9b5;
                 opacity: 0.4;
+            }
+        }
+        .project-slide {
+            position: relative;
+            width: 100%;
+            // max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                .slide {
+                    min-width: 100%;
+                    box-sizing: border-box;
+
+                }
+            }
+            .prev,
+            .next {
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .prev {
+                left: 1px;
+            }
+
+            .next {
+                right: 10px;
+            }
+
+            .dots {
+                text-align: center;
+                padding: 10px;
+                .dot {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 5px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &.active {
+                        background-color: #717171;
+                    }
+                }
             }
         }
     }
