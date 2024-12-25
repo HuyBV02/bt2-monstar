@@ -35,31 +35,62 @@ rangeMax.addEventListener("input", updateSlider);
 
 window.onload = updateSlider;
 
-// slide show
-let slideIndex = 0;
-showSlides(slideIndex);
+// slideshow function
+function makeSlideshow(selector) {
+    const slideshow = document.querySelector(selector);
+    const slides = slideshow.querySelector('.slides');
+    const slideCount = slides.children.length;
+    const prevButton = slideshow.querySelector('.prev');
+    const nextButton = slideshow.querySelector('.next');
+    const dotsContainer = slideshow.querySelector('.dots');
+    let currentIndex = 0;
+    let autoSlideInterval;
 
-function showSlides(n) {
-    let slides = document.getElementsByClassName("slide");
-    if (n >= slides.length) {
-        slideIndex = 0;
+    // Create dots
+    for (let i = 0; i < slideCount; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
     }
-    if (n < 0) {
-        slideIndex = slides.length - 1;
+
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    function goToSlide(index) {
+        currentIndex = index;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+        resetAutoSlide();
     }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        goToSlide(currentIndex);
     }
-    slides[slideIndex].style.display = "block";
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        goToSlide(currentIndex);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    resetAutoSlide();
 }
 
-function nextSlide() {
-    showSlides((slideIndex += 1));
-}
 
-function prevSlide() {
-    showSlides((slideIndex -= 1));
-}
+document.addEventListener('DOMContentLoaded', () => {
+    makeSlideshow('.slider1');
+    makeSlideshow('.project-slide');
+});
 
 // accordion
 
